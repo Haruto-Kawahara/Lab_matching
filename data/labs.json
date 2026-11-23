@@ -9,11 +9,11 @@
     },
     {
         "name":"宇佐美研究室",
-        "difficulty":null,
-        "atmosphere":"",
-        "masterRate":5,
+        "difficulty":3,
+        "atmosphere":["両方"],
+        "masterRate":2,
         "research":["コンピュータビジョン"],
-        "review":[""]
+        "review":["やる気次第でなんでもやらせてくれます。"]
     },
     {
         "name":"奥居研究室",
@@ -25,8 +25,8 @@
     },
     {
         "name":"木村研究室",
-        "difficulty":2,
-        "atmosphere":["わいわい喋りながら研究"],
+        "difficulty":6,
+        "atmosphere":["ワイワイ"],
         "masterRate":5,
         "research":["ディジタルツインコンピューティング"],
         "review":["情報信号処理について最強です。やりたいと言ったことに前向きで取り組めます。"]
@@ -49,11 +49,11 @@
     },
     {
         "name":"中村研究室",
-        "difficulty":null,
-        "atmosphere":"",
-        "masterRate":null,
+        "difficulty":1,
+        "atmosphere":"大多数が黙々と",
+        "masterRate":2,
         "research":["計算物理学"],
-        "review":[""]
+        "review":["好きなものの音象徴を調べれます。"]
     },
     {
         "name":"松井研究室",
