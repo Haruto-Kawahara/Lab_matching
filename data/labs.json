@@ -50,7 +50,8 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["知的情報社会学"],
-        "review":["土地評価","AI"]
+        "review":[""],
+        "tags":["土地評価","AI"]
     },
     {
         "name":"中村研究室",
@@ -58,7 +59,7 @@
         "atmosphere":"大多数が黙々と",
         "masterRate":2,
         "research":["計算物理学"],
-        "review":["好きなものの音象徴を調べれます。"],
+        "review":["ゲーム・アニメなどの、好きなものの音象徴を調べられます。"],
         "tags":["音象徴","オノマトペ","コミック工学"]
     },
     {
