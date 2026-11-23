@@ -4,32 +4,43 @@ fetch("data/labs.json")
 .then(res => res.json())
 .then(labs => {
     allLabs = labs;
-    // 研究室一覧
-    const list = document.getElementById("labList");
-    labs.forEach(lab => {
+    let list = document.getElementById("labList");
+    const tagArea = document.getElementById("tagArea");
+    const allTags = [...new Set(
+        labs.flatMap(lab => lab.tags || [])
+    )];
+    allTags.sort();
+    allTags.forEach(tag => {
         const btn = document.createElement("button");
-        btn.textContent = lab.name;
-        btn.onclick = function () {
-            showLab(lab);
+        btn.textContent = tag;
+        btn.onclick = function(){
+            const result = labs.filter(lab =>
+                lab.tags && lab.tags.includes(tag)
+            );
+            displayLabs(result, list);
         };
-        list.appendChild(btn);
+        tagArea.appendChild(btn);
     });
+
+    //  研究室表示
+    displayLabs(labs, list);
 
     // 検索ボタン
     document.getElementById("searchBtn")
-    .addEventListener("click",function(){
-        const keyword = document.getElementById("searchBox").value;
-        const result = labs.filter(lab =>
+    .addEventListener("click", function(){
+        const keyword =
+        document.getElementById("searchBox").value;
+        const result = allLabs.filter(lab =>
             lab.tags &&
-            lab.tags.some(tag => tag.includes(keyword))
+            lab.tags.some(tag =>
+                tag.includes(keyword)
+            )
         );
-        list.innerHTML = "";
-        result.forEach(lab =>{
-            createLabButton(lab, list);
-        });
+        displayLabs(result, list);
     });
 });
 
+// 関数--------------
 // 研究室表示
 function showLab(lab){
     document.getElementById("detailArea").innerHTML = `
@@ -50,17 +61,18 @@ function showLab(lab){
 
         <h4>タグ</h4>
         <p>${lab.tags ? lab.tags.join(" / ") : "未設定"}</p>
-
     `;
 }
-function createLabButton(lab, list){
-    const btn = document.createElement("button");
 
-    btn.textContent = lab.name;
-
-    btn.onclick = function(){
-        showLab(lab);
-    };
-
-    list.appendChild(btn);
+// 研究室表示
+function displayLabs(labs, list){
+    list.innerHTML = "";
+    labs.forEach(lab => {
+        const btn = document.createElement("button");
+        btn.textContent = lab.name;
+        btn.onclick = function(){
+            showLab(lab);
+        };
+        list.appendChild(btn);
+    });
 }
