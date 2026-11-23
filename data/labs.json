@@ -5,7 +5,7 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["知的信号処理"],
-        "review":["株についてもやっている？"]
+        "review":[""]
     },
     {
         "name":"宇佐美研究室",
@@ -21,7 +21,7 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["記号計算"],
-        "review":[""]
+        "review":["園児・幼児教育"]
     },
     {
         "name":"木村研究室",
@@ -37,7 +37,7 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["高額基礎論"],
-        "review":[""]
+        "review":["情報セキュリティ系"]
     },
     {
         "name":"屠研究室",
@@ -61,7 +61,7 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["データ・マイニング"],
-        "review":[""]
+        "review":["機械学習から株、競馬を扱っている…？"]
     },
     {
         "name":"森田研究室",
@@ -77,7 +77,7 @@
         "atmosphere":"",
         "masterRate":null,
         "research":["生物模倣知的処理"],
-        "review":[""]
+        "review":["ショウジョウバエなど機械学習等も扱っています。"]
     },
     {
         "name":"藤吉・山下研究室",
