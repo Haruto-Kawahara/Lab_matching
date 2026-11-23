@@ -1,13 +1,38 @@
-getElementById("startBtn")
-.addEventListenr("click",function(){
-    document.getElementById("questionArea")
-    .innerHTML=
-    <h2></h2>
-    <select id="">
-        <option value="1">1</option>
-        <option value="1">2</option>
-        <option value="1">3</option>
-        <option value="1">4</option>
-        <option value="1">5</option>
-    </select>
+fetch("labs.json")
+.then(res => res.json())
+.then(labs => {
+    const list = document.getElementById("labList");
+    labs.forEach(lab => {
+        const btn = document.createElement("button");
+        btn.textContent = lab.name;
+        btn.onclick = function () {
+            document.getElementById("detailArea").innerHTML = `
+                <h2>${lab.name}</h2>
+
+                <p>厳しさ：${lab.difficulty ?? "不明"}</p>
+
+                <p>雰囲気：${lab.atmosphere || "不明"}</p>
+
+                <p>院進率：${lab.masterRate ?? "不明"}</p>
+
+                <h3>研究内容</h3>
+
+                <ul>
+                    ${lab.research.map(r =>
+                        `<li>${r}</li>`).join("")
+                    }
+                </ul>
+
+                <h3>口コミ</h3>
+
+                <ul>
+                    ${lab.review.map(r =>
+                        `<li>${r}</li>`).join("")
+                    }
+                </ul>
+            `;
+        };
+
+        list.appendChild(btn);
+    });
 });
