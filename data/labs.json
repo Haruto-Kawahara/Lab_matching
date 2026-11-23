@@ -1,26 +1,26 @@
 [
     {
         "name":"板井研究室",
-        "difficulty":null,
-        "atmosphere":"",
-        "masterRate":null,
+        "difficulty":4,
+        "atmosphere":["和やか"],
+        "masterRate":1,
         "research":["知的信号処理"],
-        "review":[""],
-        "tags":["脳波","歩行足音解析","電磁波解析"]
+        "review":["信号の取得などを実際に行います。メインは生体信号ですが、基本的に何でもできます。"],
+        "tags":["脳波","歩行足音解析","電磁波解析","就職"]
     },
     {
         "name":"宇佐美研究室",
         "difficulty":3,
-        "atmosphere":["両方"],
+        "atmosphere":["ワイワイも黙々も"],
         "masterRate":2,
         "research":["コンピュータビジョン"],
         "review":["やる気次第でなんでもやらせてくれます。"],
-        "tags":["医用画像解析","画像理解","AI","院進"]
+        "tags":["医用画像解析","画像理解","AI","院進","就職"]
     },
     {
         "name":"奥居研究室",
         "difficulty":null,
-        "atmosphere":"",
+        "atmosphere":[""],
         "masterRate":null,
         "research":["記号計算"],
         "review":[""],
@@ -33,12 +33,12 @@
         "masterRate":5,
         "research":["ディジタルツインコンピューティング"],
         "review":["情報信号処理について最強です。やりたいと言ったことに前向きで取り組めます。"],
-        "tags":["IoT","リバースエンジニアリング","院進"]
+        "tags":["IoT","リバースエンジニアリング","院進","就職"]
     },
     {
         "name":"只木研究室",
         "difficulty":null,
-        "atmosphere":"",
+        "atmosphere":[""],
         "masterRate":null,
         "research":["高額基礎論"],
         "review":["情報セキュリティ系"],
@@ -47,7 +47,7 @@
     {
         "name":"屠研究室",
         "difficulty":null,
-        "atmosphere":"",
+        "atmosphere":[""],
         "masterRate":null,
         "research":["知的情報社会学"],
         "review":[""],
@@ -56,16 +56,16 @@
     {
         "name":"中村研究室",
         "difficulty":1,
-        "atmosphere":"大多数が黙々と",
-        "masterRate":2,
+        "atmosphere":["真面目に黙々と"],
+        "masterRate":1,
         "research":["計算物理学"],
         "review":["ゲーム・アニメなどの、好きなものの音象徴を調べられます。"],
-        "tags":["音象徴","オノマトペ","コミック工学"]
+        "tags":["音象徴","オノマトペ","コミック工学","就職"]
     },
     {
         "name":"松井研究室",
         "difficulty":null,
-        "atmosphere":"",
+        "atmosphere":[""],
         "masterRate":null,
         "research":["データ・マイニング"],
         "review":[""],
@@ -74,7 +74,7 @@
     {
         "name":"森田研究室",
         "difficulty":null,
-        "atmosphere":"",
+        "atmosphere":[""],
         "masterRate":null,
         "research":["情報システム"],
         "review":[""],
@@ -82,17 +82,17 @@
     },
     {
         "name":"山内研究室",
-        "difficulty":null,
-        "atmosphere":"",
-        "masterRate":null,
+        "difficulty":2,
+        "atmosphere":["真面目"],
+        "masterRate":2,
         "research":["生物模倣知的処理"],
-        "review":["ショウジョウバエなど機械学習等も扱っています。"],
-        "tags":["機械学習","AI"]
+        "review":["基本的に自由で、やりたいことを0からやれます。真面目な人におすすめです。"],
+        "tags":["機械学習","ラズベリーパイ","AI","就職"]
     },
     {
         "name":"藤吉・山下研究室",
         "difficulty":5,
-        "atmosphere":"真面目に黙々",
+        "atmosphere":["真面目に黙々"],
         "masterRate":5,
         "research":["機械知覚"],
         "review":["MPRGという研究グループに入っています。計算機の量が多く、費用も多いです。いつでも人がいます。"],
@@ -101,10 +101,10 @@
     {
         "name":"山本研究室",
         "difficulty":3,
-        "atmosphere":"優しめ",
+        "atmosphere":["優しめ"],
         "masterRate":null,
         "research":["音・メディアコミュニケーション"],
         "review":["提出物などは多いが、優しめです。"],
-        "tags":["音声認識","音声対話・コミュニケーション","AI"]
+        "tags":["音声認識","音声対話・コミュニケーション","AI","就職"]
     }
 ]

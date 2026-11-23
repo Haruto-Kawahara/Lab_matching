@@ -1,6 +1,8 @@
 let allLabs = [];
 let currentQuestion = "q1";
 let selectedTags = [];
+// 再診断ボタン
+document.getElementById("restartBtn").addEventListener("click",restartDiagnosis);
 
 // 質問
 const questions = {
@@ -22,6 +24,11 @@ const questions = {
     q4 : {
         text : "セキュリティに興味がありますか？",
         tag : "情報セキュリティ",
+        next : "q5"
+    },
+    q5 : {
+        text : "強化学習、機械学習に興味がありますか？",
+        tag : "機械学習",
         next : null
     }
 };
@@ -48,27 +55,13 @@ fetch("data/labs.json")
         tagArea.appendChild(btn);
     });
 
-    //  研究室表示
     displayLabs(labs, list);
-
-    // 検索ボタン
-    document.getElementById("searchBtn")
-    .addEventListener("click", function(){
-        const keyword =
-        document.getElementById("searchBox").value;
-        const result = allLabs.filter(lab =>
-            lab.tags &&
-            lab.tags.some(tag =>
-                tag.includes(keyword)
-            )
-        );
-        displayLabs(result, list);
-    });
-
     showQuestion();
 });
 
+
 // 関数--------------
+
 // 研究室表示
 function showLab(lab){
     document.getElementById("detailArea").innerHTML = `
@@ -81,12 +74,10 @@ function showLab(lab){
         <ul>
             ${lab.research.map(r => `<li>${r}</li>`).join("")}
         </ul>
-
         <h3>口コミ</h3>
         <ul>
             ${lab.review.map(r => `<li>${r}</li>`).join("")}
         </ul>
-
         <h4>タグ</h4>
         <p>${lab.tags ? lab.tags.join(" / ") : "未設定"}</p>
     `;
@@ -104,6 +95,8 @@ function displayLabs(labs, list){
         list.appendChild(btn);
     });
 }
+
+// 5段階評価★☆☆☆☆
 function makeStars(num){
     if(num == null) return "調査中";
     return "★".repeat(num) + "☆".repeat(5-num);
@@ -115,40 +108,38 @@ function showQuestion(){
     document.getElementById("question")
         .textContent = q.text;
 }
-
+// 診断結果
 function showDiagnosisResult(){
     const scores = allLabs.map(lab => {
         let score = 0;
-
+        const matchedTags = [];
         selectedTags.forEach(tag => {
-            if(lab.tags && lab.tags.includes(tag)) score++;
+        if(lab.tags && lab.tags.includes(tag)){
+            score++;
+            matchedTags.push(tag);
+        }
         });
-
         return {
-            name : lab.name,
-            score : score
+            lab : lab,
+            score : score,
+            matchedTags : matchedTags
         };
     });
-
     scores.sort((a,b) => b.score - a.score);
     const top3 = scores.slice(0,3);
-
-    document.getElementById("buttons")
-        .style.display = "none";
+    document.getElementById("buttons").style.display = "none";
+    document.getElementById("result").style.display = "block";
     document.getElementById("result")
-        .innerHTML =
-`
+    .innerHTML = `
         <h3>おすすめ研究室</h3>
 
-        <p>1位 ${top3[0].name}
-        (${top3[0].score}点)</p>
-        <p>2位 ${top3[1].name}
-        (${top3[1].score}点)</p>
-        <p>3位 ${top3[2].name}
-        (${top3[2].score}点)</p>
-        `;
+        ${createRankingLab(top3[0])}
+        ${createRankingLab(top3[1])}
+        ${createRankingLab(top3[2])}
+    `;
+    document.getElementById("restartBtn").style.display = "inline-block";   
 }
-
+// 解答(y/n)
 function answer(choice){
     const q = questions[currentQuestion];
     if(choice === "yes") selectedTags.push(q.tag);
@@ -158,4 +149,36 @@ function answer(choice){
     }
     currentQuestion = q.next;
     showQuestion();
+}
+// 再診断
+function restartDiagnosis(){
+    currentQuestion = "q1";
+    selectedTags = [];
+    document.getElementById("buttons").style.display = "block";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("restartBtn").style.display = "none";
+    showQuestion();
+}
+
+function showLabByName(name){
+    const lab = allLabs.find(l => l.name === name);
+    if(lab) showLab(lab);
+}
+// 診断結果表示
+function createRankingLab(rankData){
+    return `
+        <div class="rankingItem">
+            <button onclick="showLabByName('${rankData.lab.name}')">
+                ${rankData.lab.name}
+            </button>
+            <br>
+            ${rankData.score}点
+            <br>
+            タグ:
+            ${rankData.matchedTags.join(" / ")}
+            <br>
+            <br>
+        </div>
+    `;
 }
