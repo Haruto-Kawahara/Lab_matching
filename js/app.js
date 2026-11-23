@@ -1,5 +1,9 @@
-fetch("labs.json")
-.then(res => res.json())
+console.log("app.js 読み込み成功");
+fetch("data/labs.json")
+.then(res => {
+    console.log(res);
+    return res.json();
+})
 .then(labs => {
     const list = document.getElementById("labList");
     labs.forEach(lab => {

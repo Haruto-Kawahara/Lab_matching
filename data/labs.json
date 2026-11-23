@@ -4,7 +4,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["知的信号処理"],
         "review":["株についてもやっている？"]
     },
     {
@@ -12,7 +12,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":5,
-        "research":[""],
+        "research":["コンピュータビジョン"],
         "review":[""]
     },
     {
@@ -20,15 +20,15 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["記号計算"],
         "review":[""]
     },
     {
         "name":"木村研究室",
         "difficulty":2,
-        "atmosphere":"和やか",
+        "atmosphere":["わいわい喋りながら研究"],
         "masterRate":5,
-        "research":[""],
+        "research":["ディジタルツインコンピューティング"],
         "review":["情報信号処理について最強です。やりたいと言ったことに前向きで取り組めます。"]
     },
     {
@@ -36,7 +36,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["高額基礎論"],
         "review":[""]
     },
     {
@@ -44,7 +44,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["知的情報社会学"],
         "review":[""]
     },
     {
@@ -52,7 +52,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["計算物理学"],
         "review":[""]
     },
     {
@@ -60,7 +60,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["データ・マイニング"],
         "review":[""]
     },
     {
@@ -68,7 +68,7 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["情報システム"],
         "review":[""]
     },
     {
@@ -76,15 +76,15 @@
         "difficulty":null,
         "atmosphere":"",
         "masterRate":null,
-        "research":[""],
+        "research":["生物模倣知的処理"],
         "review":[""]
     },
     {
         "name":"藤吉・山下研究室",
         "difficulty":5,
-        "atmosphere":"真面目",
+        "atmosphere":"真面目に黙々",
         "masterRate":5,
-        "research":["自動運転など"],
+        "research":["機械知覚"],
         "review":["MPRGという研究グループに入っています。計算機の量が多く、費用も多いです。いつでも人がいます。"]
     },
     {
@@ -92,7 +92,7 @@
         "difficulty":3,
         "atmosphere":"優しめ",
         "masterRate":null,
-        "research":[""],
+        "research":["音・メディアコミュニケーション"],
         "review":["提出物などは多いが、優しめです。"]
     }
 ]
