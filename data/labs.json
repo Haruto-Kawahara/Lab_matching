@@ -28,7 +28,7 @@
     },
     {
         "name":"木村研究室",
-        "difficulty":6,
+        "difficulty":5,
         "atmosphere":["ワイワイ"],
         "masterRate":5,
         "research":["ディジタルツインコンピューティング"],
