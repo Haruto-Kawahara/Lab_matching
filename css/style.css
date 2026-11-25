@@ -8,14 +8,20 @@ button {
     padding: 10px 15px;
     cursor: pointer;
 }
-
+/* 研究室 */
 #detailArea {
     margin-top: 20px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
+#LabList button{
+    display: block;
+    margin: 5px 0;
+    width: 250px;
+}
 
+/* タグ */
 #tagArea button{
     margin: 3px;
     padding: 5px 12px;
@@ -25,13 +31,7 @@ button {
     color: white;
     cursor: pointer;
 }
-
-#LabList button{
-    display: block;
-    margin: 5px 0;
-    width: 250px;
-}
-
+/* 診断 */
 #diagnosis{
     width: 700px;
     margin: 40px auto;
@@ -40,14 +40,12 @@ button {
     background-color: #f5f8fc;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-
 #question{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
 }
-
 #buttons button{
     width: 150px;
     height: 60px;
@@ -56,12 +54,11 @@ button {
     justify-content: center;
     margin: 10px;
 }
-
 #buttons{
     justify-content: center;
     gap: 20px;
 }
-
+/* 診断結果 */
 #result{
     margin-top: 20px;
     padding: 20px;
@@ -69,7 +66,6 @@ button {
     background-color: #eef5ff;
     font-size: 20px;
 }
-
 .rankingButton{
     width: 300px;
     padding: 12px;
