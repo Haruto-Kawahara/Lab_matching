@@ -154,12 +154,13 @@ function answer(choice){
 function restartDiagnosis(){
     currentQuestion = "q1";
     selectedTags = [];
-    document.getElementById("buttons").style.display = "block";
+    document.getElementById("buttons").style.display = "";
     document.getElementById("result").innerHTML = "";
     document.getElementById("result").style.display = "none";
     document.getElementById("restartBtn").style.display = "none";
     showQuestion();
 }
+
 
 function showLabByName(name){
     const lab = allLabs.find(l => l.name === name);

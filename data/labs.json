@@ -19,9 +19,9 @@
     },
     {
         "name":"奥居研究室",
-        "difficulty":null,
-        "atmosphere":[""],
-        "masterRate":null,
+        "difficulty":3,
+        "atmosphere":["真面目"],
+        "masterRate":2,
         "research":["記号計算"],
         "review":[""],
         "tags":["記号計算","宣言的プログラミングパラダイム","園児・幼児教育"]
@@ -37,18 +37,18 @@
     },
     {
         "name":"只木研究室",
-        "difficulty":null,
-        "atmosphere":[""],
-        "masterRate":null,
+        "difficulty":3,
+        "atmosphere":["真面目"],
+        "masterRate":3,
         "research":["高額基礎論"],
         "review":["情報セキュリティ系"],
         "tags":["暗号技術","情報セキュリティ","量子力学","確率概念"]
     },
     {
         "name":"屠研究室",
-        "difficulty":null,
-        "atmosphere":[""],
-        "masterRate":null,
+        "difficulty":2,
+        "atmosphere":["真面目"],
+        "masterRate":2,
         "research":["知的情報社会学"],
         "review":[""],
         "tags":["土地評価","AI"]
@@ -64,18 +64,18 @@
     },
     {
         "name":"松井研究室",
-        "difficulty":null,
-        "atmosphere":[""],
-        "masterRate":null,
+        "difficulty":3,
+        "atmosphere":["真面目"],
+        "masterRate":2,
         "research":["データ・マイニング"],
-        "review":[""],
+        "review":["苦手な人でもサポートしてくれます。"],
         "tags":["機械学習","株","競馬","AI"]
     },
     {
         "name":"森田研究室",
-        "difficulty":null,
-        "atmosphere":[""],
-        "masterRate":null,
+        "difficulty":3,
+        "atmosphere":["真面目"],
+        "masterRate":2,
         "research":["情報システム"],
         "review":[""],
         "tags":["教育支援","脳"]
