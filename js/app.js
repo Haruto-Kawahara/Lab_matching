@@ -108,6 +108,7 @@ function showQuestion(){
     document.getElementById("question")
         .textContent = q.text;
 }
+
 // 診断結果
 function showDiagnosisResult(){
     const scores = allLabs.map(lab => {
@@ -132,13 +133,13 @@ function showDiagnosisResult(){
     document.getElementById("result")
     .innerHTML = `
         <h3>おすすめ研究室</h3>
-
         ${createRankingLab(top3[0])}
         ${createRankingLab(top3[1])}
         ${createRankingLab(top3[2])}
     `;
     document.getElementById("restartBtn").style.display = "inline-block";   
 }
+
 // 解答(y/n)
 function answer(choice){
     const q = questions[currentQuestion];
@@ -150,6 +151,7 @@ function answer(choice){
     currentQuestion = q.next;
     showQuestion();
 }
+
 // 再診断
 function restartDiagnosis(){
     currentQuestion = "q1";
@@ -161,11 +163,11 @@ function restartDiagnosis(){
     showQuestion();
 }
 
-
 function showLabByName(name){
     const lab = allLabs.find(l => l.name === name);
     if(lab) showLab(lab);
 }
+
 // 診断結果表示
 function createRankingLab(rankData){
     return `

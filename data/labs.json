@@ -23,7 +23,7 @@
         "atmosphere":["真面目"],
         "masterRate":2,
         "research":["記号計算"],
-        "review":[""],
+        "review":["やる気のある人、真面目な人におすすめです。"],
         "tags":["記号計算","宣言的プログラミングパラダイム","園児・幼児教育"]
     },
     {
@@ -39,9 +39,9 @@
         "name":"只木研究室",
         "difficulty":3,
         "atmosphere":["真面目"],
-        "masterRate":3,
+        "masterRate":2,
         "research":["高額基礎論"],
-        "review":["情報セキュリティ系"],
+        "review":["情報セキュリティ系において最強です。"],
         "tags":["暗号技術","情報セキュリティ","量子力学","確率概念"]
     },
     {
@@ -50,7 +50,7 @@
         "atmosphere":["真面目"],
         "masterRate":2,
         "research":["知的情報社会学"],
-        "review":[""],
+        "review":["教員のサポートが手厚いです。"],
         "tags":["土地評価","AI"]
     },
     {
@@ -68,16 +68,16 @@
         "atmosphere":["真面目"],
         "masterRate":2,
         "research":["データ・マイニング"],
-        "review":["苦手な人でもサポートしてくれます。"],
+        "review":["学業でも就職でもサポートが手厚いです。"],
         "tags":["機械学習","株","競馬","AI"]
     },
     {
         "name":"森田研究室",
-        "difficulty":3,
+        "difficulty":2,
         "atmosphere":["真面目"],
         "masterRate":2,
         "research":["情報システム"],
-        "review":[""],
+        "review":["優しめです。真面目な人におすすめです。"],
         "tags":["教育支援","脳"]
     },
     {
@@ -102,7 +102,7 @@
         "name":"山本研究室",
         "difficulty":3,
         "atmosphere":["優しめ"],
-        "masterRate":null,
+        "masterRate":2,
         "research":["音・メディアコミュニケーション"],
         "review":["提出物などは多いが、優しめです。"],
         "tags":["音声認識","音声対話・コミュニケーション","AI","就職"]
