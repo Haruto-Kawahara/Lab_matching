@@ -32,8 +32,8 @@ button {
     padding: 5px 12px;
     border-radius: 20px;
     border: none;
-    background-color: #4caf50;
-    color: white;
+    background-color: #50b755;
+    color: #fcf0f0f0;
     cursor: pointer;
 }
 
@@ -43,7 +43,7 @@ button {
     margin: 40px auto;
     padding: 30px;
     border-radius: 15px;
-    background-color: #f5f8fc;
+    background-color: #fcffd5f0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 #question{
