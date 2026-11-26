@@ -43,13 +43,16 @@ fetch("data/labs.json")
         labs.flatMap(lab => lab.tags || [])
     )];
     allTags.sort();
-    // 全て表示ボタン
+    
+    // 全表示ボタン
     const allBtn = document.createElement("button");
     allBtn.textContent = "すべて表示";
+    allBtn.classList.add("allButton");
     allBtn.onclick = function(){
-        displayLabs(allLabs, list);
-    };
+        displayLabs(allLabs,list);
+    }
     tagArea.appendChild(allBtn);
+    tagArea.appendChild(document.createElement("br"));
     
     allTags.forEach(tag => {
         const btn = document.createElement("button");
