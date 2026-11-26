@@ -43,6 +43,14 @@ fetch("data/labs.json")
         labs.flatMap(lab => lab.tags || [])
     )];
     allTags.sort();
+    // 全て表示ボタン
+    const allBtn = document.createElement("button");
+    allBtn.textContent = "すべて表示";
+    allBtn.onclick = function(){
+        displayLabs(allLabs, list);
+    };
+    tagArea.appendChild(allBtn);
+    
     allTags.forEach(tag => {
         const btn = document.createElement("button");
         btn.textContent = tag;
@@ -98,6 +106,11 @@ function showLabByName(name){
     const lab = allLabs.find(l => l.name === name);
     if(lab) showLab(lab);
 }
+// 全ての研究室を表示
+document.getElementById("showAllBtn")
+.addEventListener("click", function () {
+    displayLabs(allLabs,document.getElementById("labList"));
+});
 
 // 5段階評価★☆☆☆☆
 function makeStars(num){
