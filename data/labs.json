@@ -43,21 +43,21 @@
         "name":"只木研究室",
         "difficulty":3,
         "atmosphere":["真面目"],
-        "masterRate":2,
+        "masterRate":3,
         "employment":4,
         "research":["高額基礎論"],
-        "review":["情報セキュリティ系"],
+        "review":["情報セキュリティ系について最強です。"],
         "tags":["暗号技術","情報セキュリティ","量子力学","確率概念","就職"]
     },
     {
         "name":"屠研究室",
-        "difficulty":2,
+        "difficulty":3,
         "atmosphere":["和やか"],
-        "masterRate":2,
-        "employment":4,
+        "masterRate":1,
+        "employment":5,
         "research":["知的情報社会学"],
-        "review":[""],
-        "tags":["土地評価","AI","就職"]
+        "review":["実践的で幅広い取り組みを行っています。学んだ技術を研究室内だけでなく、外にも連携して活かせます。"],
+        "tags":["情報発信","土地評価","AI","就職"]
     },
     {
         "name":"中村研究室",
@@ -77,7 +77,7 @@
         "employment":4,
         "research":["データ・マイニング"],
         "review":["学習でもそれ以外でも、苦手な人をサポートしてくれます。"],
-        "tags":["機械学習","株","競馬","AI"]
+        "tags":["機械学習","株","競馬","AI","就職"]
     },
     {
         "name":"森田研究室",
@@ -116,7 +116,7 @@
         "masterRate":1,
         "employment":5,
         "research":["音・メディアコミュニケーション"],
-        "review":["提出物などは多いが、優しめです。"],
+        "review":["提出物などは多いですが、優しめです。"],
         "tags":["音声認識","音声対話・コミュニケーション","AI","就職"]
     }
 ]
