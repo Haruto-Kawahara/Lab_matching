@@ -106,11 +106,6 @@ function showLabByName(name){
     const lab = allLabs.find(l => l.name === name);
     if(lab) showLab(lab);
 }
-// 全ての研究室を表示
-document.getElementById("showAllBtn")
-.addEventListener("click", function () {
-    displayLabs(allLabs,document.getElementById("labList"));
-});
 
 // 5段階評価★☆☆☆☆
 function makeStars(num){
