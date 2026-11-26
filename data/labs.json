@@ -21,10 +21,10 @@
     },
     {
         "name":"奥居研究室",
-        "difficulty":3,
-        "atmosphere":["真面目"],
-        "masterRate":2,
-        "employment":4,
+        "difficulty":null,
+        "atmosphere":[""],
+        "masterRate":null,
+        "employment":null,
         "research":["記号計算"],
         "review":["最近は幼児対象のプログラム学習について取り組んでいます。"],
         "tags":["記号計算","宣言的プログラミングパラダイム","園児・幼児教育","就職"]
@@ -32,7 +32,7 @@
     {
         "name":"木村研究室",
         "difficulty":5,
-        "atmosphere":["ワイワイ"],
+        "atmosphere":["賑やか"],
         "masterRate":1,
         "employment":5,
         "research":["ディジタルツインコンピューティング"],
@@ -41,10 +41,10 @@
     },
     {
         "name":"只木研究室",
-        "difficulty":3,
-        "atmosphere":["真面目"],
-        "masterRate":3,
-        "employment":4,
+        "difficulty":null,
+        "atmosphere":[""],
+        "masterRate":null,
+        "employment":null,
         "research":["高額基礎論"],
         "review":["情報セキュリティ系について最強です。"],
         "tags":["暗号技術","情報セキュリティ","量子力学","確率概念","就職"]
@@ -81,12 +81,12 @@
     },
     {
         "name":"森田研究室",
-        "difficulty":3,
-        "atmosphere":["真面目"],
-        "masterRate":2,
-        "employment":4,
+        "difficulty":null,
+        "atmosphere":[""],
+        "masterRate":null,
+        "employment":null,
         "research":["情報システム"],
-        "review":["自己管理ができる、真面目な人におすすめです。"],
+        "review":[""],
         "tags":["教育支援","脳"]
     },
     {
