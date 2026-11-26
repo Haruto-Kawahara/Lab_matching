@@ -70,7 +70,7 @@ function showLab(lab){
         <p>雰囲気：${lab.atmosphere || "調査中"}</p>
         <p>院進率：${makeStars(lab.masterRate) ?? "調査中"}</p>
         <p>就職率：${makeStars(lab.employment) ?? "調査中"}</p>
-        
+
         <h3>研究内容</h3>
         <ul>
             ${lab.research.map(r => `<li>${r}</li>`).join("")}
@@ -83,8 +83,6 @@ function showLab(lab){
         <p>${lab.tags ? lab.tags.join(" / ") : "未設定"}</p>
     `;
 }
-
-// 研究室表示
 function displayLabs(labs, list){
     list.innerHTML = "";
     labs.forEach(lab => {
@@ -96,6 +94,10 @@ function displayLabs(labs, list){
         list.appendChild(btn);
     });
 }
+function showLabByName(name){
+    const lab = allLabs.find(l => l.name === name);
+    if(lab) showLab(lab);
+}
 
 // 5段階評価★☆☆☆☆
 function makeStars(num){
@@ -103,7 +105,7 @@ function makeStars(num){
     return "★".repeat(num) + "☆".repeat(5-num);
 }
 
-// 質問
+// 質問の表示
 function showQuestion(){
     const q = questions[currentQuestion];
     document.getElementById("question")
@@ -153,22 +155,6 @@ function answer(choice){
     showQuestion();
 }
 
-// 再診断
-function restartDiagnosis(){
-    currentQuestion = "q1";
-    selectedTags = [];
-    document.getElementById("buttons").style.display = "";
-    document.getElementById("result").innerHTML = "";
-    document.getElementById("result").style.display = "none";
-    document.getElementById("restartBtn").style.display = "none";
-    showQuestion();
-}
-
-function showLabByName(name){
-    const lab = allLabs.find(l => l.name === name);
-    if(lab) showLab(lab);
-}
-
 // 診断結果表示
 function createRankingLab(rankData){
     return `
@@ -185,4 +171,15 @@ function createRankingLab(rankData){
             <br>
         </div>
     `;
+}
+
+// 再診断
+function restartDiagnosis(){
+    currentQuestion = "q1";
+    selectedTags = [];
+    document.getElementById("buttons").style.display = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("restartBtn").style.display = "none";
+    showQuestion();
 }
