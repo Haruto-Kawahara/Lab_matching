@@ -4,6 +4,7 @@
         "difficulty":4,
         "atmosphere":["和やか"],
         "masterRate":1,
+        "employment":5,
         "research":["知的信号処理"],
         "review":["信号の取得などを実際に行います。メインは生体信号ですが、基本的に何でもできます。"],
         "tags":["脳波","歩行足音解析","電磁波解析","就職"]
@@ -13,6 +14,7 @@
         "difficulty":3,
         "atmosphere":["ワイワイも黙々も"],
         "masterRate":2,
+        "employment":4,
         "research":["コンピュータビジョン"],
         "review":["やる気次第でなんでもやらせてくれます。"],
         "tags":["医用画像解析","画像理解","AI","院進","就職"]
@@ -22,15 +24,17 @@
         "difficulty":3,
         "atmosphere":["真面目"],
         "masterRate":2,
+        "employment":4,
         "research":["記号計算"],
-        "review":["やる気のある人、真面目な人におすすめです。"],
-        "tags":["記号計算","宣言的プログラミングパラダイム","園児・幼児教育"]
+        "review":["最近は幼児対象のプログラム学習について取り組んでいます。"],
+        "tags":["記号計算","宣言的プログラミングパラダイム","園児・幼児教育","就職"]
     },
     {
         "name":"木村研究室",
         "difficulty":5,
         "atmosphere":["ワイワイ"],
-        "masterRate":5,
+        "masterRate":1,
+        "employment":5,
         "research":["ディジタルツインコンピューティング"],
         "review":["情報信号処理について最強です。やりたいと言ったことに前向きで取り組めます。"],
         "tags":["IoT","リバースエンジニアリング","院進","就職"]
@@ -40,24 +44,27 @@
         "difficulty":3,
         "atmosphere":["真面目"],
         "masterRate":2,
+        "employment":4,
         "research":["高額基礎論"],
-        "review":["情報セキュリティ系において最強です。"],
-        "tags":["暗号技術","情報セキュリティ","量子力学","確率概念"]
+        "review":["情報セキュリティ系"],
+        "tags":["暗号技術","情報セキュリティ","量子力学","確率概念","就職"]
     },
     {
         "name":"屠研究室",
         "difficulty":2,
-        "atmosphere":["真面目"],
+        "atmosphere":["和やか"],
         "masterRate":2,
+        "employment":4,
         "research":["知的情報社会学"],
-        "review":["教員のサポートが手厚いです。"],
-        "tags":["土地評価","AI"]
+        "review":[""],
+        "tags":["土地評価","AI","就職"]
     },
     {
         "name":"中村研究室",
         "difficulty":1,
-        "atmosphere":["真面目に黙々と"],
+        "atmosphere":["真面目に黙々"],
         "masterRate":1,
+        "employment":5,
         "research":["計算物理学"],
         "review":["ゲーム・アニメなどの、好きなものの音象徴を調べられます。"],
         "tags":["音象徴","オノマトペ","コミック工学","就職"]
@@ -67,17 +74,19 @@
         "difficulty":3,
         "atmosphere":["真面目"],
         "masterRate":2,
+        "employment":4,
         "research":["データ・マイニング"],
-        "review":["学業でも就職でもサポートが手厚いです。"],
+        "review":["学習でもそれ以外でも、苦手な人をサポートしてくれます。"],
         "tags":["機械学習","株","競馬","AI"]
     },
     {
         "name":"森田研究室",
-        "difficulty":2,
+        "difficulty":3,
         "atmosphere":["真面目"],
         "masterRate":2,
+        "employment":4,
         "research":["情報システム"],
-        "review":["優しめです。真面目な人におすすめです。"],
+        "review":["自己管理ができる、真面目な人におすすめです。"],
         "tags":["教育支援","脳"]
     },
     {
@@ -85,6 +94,7 @@
         "difficulty":2,
         "atmosphere":["真面目"],
         "masterRate":2,
+        "employment":4,
         "research":["生物模倣知的処理"],
         "review":["基本的に自由で、やりたいことを0からやれます。真面目な人におすすめです。"],
         "tags":["機械学習","ラズベリーパイ","AI","就職"]
@@ -94,6 +104,7 @@
         "difficulty":5,
         "atmosphere":["真面目に黙々"],
         "masterRate":5,
+        "employment":1,
         "research":["機械知覚"],
         "review":["MPRGという研究グループに入っています。計算機の量が多く、費用も多いです。いつでも人がいます。"],
         "tags":["顔面像解析","物体追跡","自動運転","院進"]
@@ -102,7 +113,8 @@
         "name":"山本研究室",
         "difficulty":3,
         "atmosphere":["優しめ"],
-        "masterRate":2,
+        "masterRate":1,
+        "employment":5,
         "research":["音・メディアコミュニケーション"],
         "review":["提出物などは多いが、優しめです。"],
         "tags":["音声認識","音声対話・コミュニケーション","AI","就職"]

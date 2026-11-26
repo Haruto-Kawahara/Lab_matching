@@ -12,18 +12,18 @@ const questions = {
         next : "q2"
     },
     q2 : {
-        text : "AIに興味がありますか？",
-        tag : "AI",
+        text : "就職希望ですか？",
+        tag : "就職",
         next : "q3"
     },
     q3 : {
-        text : "IoTに興味がありますか？",
-        tag : "IoT",
+        text : "AIに興味がありますか？",
+        tag : "AI",
         next : "q4"
     },
     q4 : {
-        text : "セキュリティに興味がありますか？",
-        tag : "情報セキュリティ",
+        text : "IoTに興味がありますか？",
+        tag : "IoT",
         next : "q5"
     },
     q5 : {
@@ -69,7 +69,8 @@ function showLab(lab){
         <p>厳しさ：${makeStars(lab.difficulty) ?? "調査中"}</p>
         <p>雰囲気：${lab.atmosphere || "調査中"}</p>
         <p>院進率：${makeStars(lab.masterRate) ?? "調査中"}</p>
-
+        <p>就職率：${makeStars(lab.employment) ?? "調査中"}</p>
+        
         <h3>研究内容</h3>
         <ul>
             ${lab.research.map(r => `<li>${r}</li>`).join("")}
